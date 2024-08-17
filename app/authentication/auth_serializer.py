@@ -1,0 +1,7 @@
+# app/customers/serializers.py
+
+from rest_framework import serializers
+
+class AuthSerializer(serializers.Serializer):
+    username = serializers.CharField()
+    password = serializers.CharField(write_only=True)
